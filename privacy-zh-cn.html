@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>隐私政策</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --fg: #1c1c1e;
+            --muted: #6b6b70;
+            --line: rgba(0, 0, 0, 0.12);
+            --surface: #ffffff;
+            --surface-alt: rgba(0, 0, 0, 0.04);
+            --link: #0a5fd0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fg: #f2f2f7;
+                --muted: #a1a1a8;
+                --line: rgba(255, 255, 255, 0.16);
+                --surface: #1c1c1e;
+                --surface-alt: rgba(255, 255, 255, 0.06);
+                --link: #7ab6ff;
+            }
+        }
+        html { background: var(--surface); }
+        body {
+            margin: 0;
+            padding: 20px 18px 40px;
+            background: var(--surface);
+            color: var(--fg);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.75;
+            word-break: break-word;
+        }
+        h1 { font-size: 22px; line-height: 1.35; margin: 0 0 6px; letter-spacing: 0.2px; }
+        .updated { font-size: 13px; color: var(--muted); margin: 0 0 18px; }
+        .lead { margin: 0 0 22px; }
+        h2 {
+            font-size: 16px;
+            margin: 28px 0 10px;
+            padding-top: 18px;
+            border-top: 1px solid var(--line);
+        }
+        h2:first-of-type { border-top: 0; padding-top: 0; }
+        p { margin: 0 0 12px; }
+        ul { margin: 0 0 12px; padding-left: 20px; }
+        li { margin: 0 0 8px; }
+        strong { font-weight: 600; }
+        .muted { color: var(--muted); font-size: 13px; }
+        .table-wrap { margin: 0 0 14px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+        th { font-weight: 600; background: var(--surface-alt); white-space: nowrap; }
+        .note {
+            background: var(--surface-alt);
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin: 0 0 14px;
+            font-size: 14px;
+        }
+        .note p:last-child { margin-bottom: 0; }
+        a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+        a:visited { color: var(--link); }
+    </style>
+</head>
+<body>
+<h1>隐私政策</h1>
+<p class="updated">生效日期：2026 年 10 月 28 日 · 最近更新：2026 年 10 月 28 日</p>
+<p class="lead">本应用是一款<strong>在本机运行</strong>的第三方即时通讯客户端辅助工具，提供「无痕」与「安全」两个账号页，用于查看你已关联账号的好友动态与在线状态、在本机整理会话记录与沟通节律。我们不运营用于承接你聊天内容的服务器：消息、动态与媒体在你的设备内处理并保存在本机。本政策说明我们处理哪些数据、数据何时会离开设备，以及你如何控制与删除它们。</p>
+<div class="note"><p class="muted" style="margin:0">本应用与所连接的第三方即时通讯服务及其运营方不存在隶属、授权、代理或合作关系；相关服务名称与商标归其权利人所有。</p></div>
+
+<h2>一、基本原则</h2>
+<ul>
+    <li><strong>本机优先</strong>：会话内容、动态、在线状态与媒体默认只在设备内处理与保存。</li>
+    <li><strong>无需注册</strong>：不需要创建我们的账号，也不需要提供手机号、邮箱或真实姓名；你填写的手机号仅用于向所连接的通讯服务发起设备关联。</li>
+    <li><strong>最小必要</strong>：仅为已开启的功能处理数据，不建立广告画像。</li>
+    <li><strong>不出售</strong>：我们不出售你的个人信息，也不将聊天内容提供给第三方用于营销。</li>
+</ul>
+
+<h2>二、保存在本机的数据</h2>
+<div class="table-wrap">
+    <table>
+        <thead>
+        <tr><th>类别</th><th>内容</th><th>用途</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>偏好设置</td>
+            <td>引导与提示的完成标记（引导是否完成、提示是否关闭）、已关联账号列表（含你填写的国际区号与手机号、账号名称、头像路径）、当前使用的账号、推送所需的匿名设备标识</td>
+            <td>记住你的设置与登录状态</td>
+        </tr>
+        <tr>
+            <td>会话凭证</td>
+            <td>每个账号独立的多设备登录凭证（由所连接的通讯服务签发），以及常用会话的名字缓存</td>
+            <td>维持设备关联，避免重复配对</td>
+        </tr>
+        <tr>
+            <td>消息与统计</td>
+            <td>在你开启的标签页内记录的会话消息文本与时间、收发方向、消息类型、媒体本地路径、阅后即删标记、动态缩略图、在线与最后上线时间、已读位置与未读计数</td>
+            <td>为你展示会话、动态与本地统计</td>
+        </tr>
+        <tr>
+            <td>媒体缓存</td>
+            <td>你查看或应用自动下载的图片、视频、语音文件及其索引</td>
+            <td>支持本地播放、查看与再次查看</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<p>上述数据保存在系统的应用私有目录，受系统沙箱隔离；我们不上传，也不提供云端备份或跨设备同步。Android 版本已关闭系统自动备份（Auto Backup 与换机直传），iOS 版本已将应用数据目录标记为不参与 iCloud 备份，两端的数据都不会被系统自动复制到云端或迁移到新机（iOS 上已有的旧备份会在下一次备份时被替换）。若你自己对整机做过完整备份，该备份中的副本按你与平台的备份策略处理。在应用内退出账号会删除该账号的会话凭证、记录与媒体文件；卸载应用会删除应用目录内的本机数据。也可以使用「设置 → 数据 → 一键清理」一次性删除全部上述数据（见第七节）。</p>
+
+<h2>三、需要联网的功能与数据流向</h2>
+<ul>
+    <li><strong>设备关联与消息同步</strong>：本应用在本机展示二维码或申请 8 位配对码，你再用手机上的通讯客户端完成关联；关联后应用在本机与该服务的服务器之间直连通信，你填写的手机号与协议凭证仅用于完成关联。消息在传输环节由该服务端到端加密保护；为在界面上展示会话与统计，解密后的内容只在本机处理并保存（见第二节），我们不在服务器侧持有密钥或明文。</li>
+    <li><strong>推送提醒（如启用）</strong>：应用启动时会向系统（FCM / APNs）获取推送令牌，令牌与本机生成的匿名设备标识会上报到我们的服务端，<strong>仅用于下发提醒</strong>，不包含聊天内容。是否显示通知由你在系统设置中控制；关闭通知后我们不再向你推送提醒，已上报的令牌保留至你申请删除。</li>
+    <li><strong>订阅与买断</strong>：支付由 Apple App Store 或 Google Play 完成，我们只读取商品信息与会员权益结果，不接触卡号与账单信息。</li>
+    <li><strong>应用更新</strong>：Android 通过 Google Play 的应用内更新，iOS 通过 App Store 完成，我们不额外上传设备信息。</li>
+    <li><strong>分析与崩溃诊断</strong>：应用集成 Firebase Analytics 与 Firebase Crashlytics，记录功能使用事件、设备型号、系统版本、应用版本、应用实例标识与系统广告标识符、崩溃堆栈与运行状态；<strong>不包含聊天内容、手机号、媒体文件</strong>。这些数据由 Google 按其隐私政策处理；你可以在系统设置中重置或限制广告标识符。</li>
+    <li><strong>唤起通讯客户端</strong>：从应用内打开所连接的通讯客户端时仅在本机发起系统跳转，不传递会话数据。</li>
+</ul>
+
+<h2>四、我们不收集或不上传的数据</h2>
+<ul>
+    <li>不要求注册手机号、邮箱或真实姓名，不建立用户账号体系。</li>
+    <li>不收集支付卡号、密码或完整账单地址。</li>
+    <li>不把消息正文、动态、媒体、通讯录或在线状态上传到我们的服务器。</li>
+    <li>不读取你的完整通讯录，不采集精确位置、通话记录或短信。</li>
+</ul>
+
+<h2>五、系统权限</h2>
+<ul>
+    <li><strong>通知</strong>：应用内主动申请的权限，用于提醒；可随时在系统设置中关闭，关闭后不影响查看已保存的内容。</li>
+    <li><strong>相机、麦克风、相册</strong>：当前版本不使用这三类权限，不拍摄、不录音，也不读取或写入你的相册；选项仅作为基础权限能力预留。若后续版本在拍照、录音或选图功能中使用，我们会在使用前单独申请并同步更新本政策。</li>
+    <li><strong>通讯录</strong>：通过系统联系人选择器读取你主动选中的单个号码用于关联，不批量读取、不上传。</li>
+    <li><strong>剪贴板</strong>：仅在你点击复制配对码时写入，不读取剪贴板中的其他内容。</li>
+</ul>
+
+<h2>六、第三方服务</h2>
+<div class="table-wrap">
+    <table>
+        <thead>
+        <tr><th>服务</th><th>提供方</th><th>涉及数据</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Firebase Analytics、Crashlytics</td><td>Google</td><td>匿名使用事件、设备与系统信息、广告标识符、崩溃日志</td></tr>
+        <tr><td>FCM / APNs</td><td>Google / Apple</td><td>推送令牌、匿名设备标识</td></tr>
+        <tr><td>App Store / Google Play 结算</td><td>Apple / Google</td><td>购买与订阅状态</td></tr>
+        <tr><td>第三方即时通讯服务</td><td>该服务运营方</td><td>关联凭证与协议通信（端到端加密）</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="note">
+    <p><strong>第三方隐私政策</strong></p>
+    <ul>
+        <li>Google（Firebase Analytics、Crashlytics、FCM、Google Play）：<a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+        <li>Apple（App Store、APNs）：<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+        <li>第三方即时通讯服务：其隐私政策以该服务官网或客户端内公示为准</li>
+    </ul>
+    <p class="muted">上述链接将在系统浏览器中打开；第三方政策可能更新，以对方官网公示为准。</p>
+</div>
+<p>除上述服务提供方、法律法规要求、保护用户或他人合法权益所必需的情形，以及经你单独同意的情形外，我们不会对外提供你的信息。若发生合并、收购或资产转让，相关数据一并转移，我们会提前告知。</p>
+
+<h2>七、数据保留与删除</h2>
+<ul>
+    <li>本机数据保留至你主动删除：在应用内退出关联账号、使用「设置 → 数据 → 一键清理」一次性清空，或卸载应用。</li>
+    <li><strong>一键清理</strong>：在「设置 → 数据」执行后，应用会立即停止后台同步，并删除本机保存的会话记录、动态、媒体与头像缓存、在线与已读状态，以及已关联账号与会话凭证。该操作当场生效、不可撤销，清理后需重新扫码配对才能继续使用。</li>
+    <li>我们的服务端仅保留推送令牌与匿名设备标识，用于下发提醒；你可以通过下方联系方式申请删除。</li>
+    <li>商店购买记录由 Apple 或 Google 按其政策保留，删除本应用不影响你的订阅权益。</li>
+</ul>
+
+<h2>八、你的权利</h2>
+<ul>
+    <li>在设置中查看会员状态、通知权限状态与版本信息，并打开本政策页面。</li>
+    <li>在系统设置中撤回通知等权限。</li>
+    <li>在应用内退出关联账号以删除该账号的数据，用「设置 → 数据 → 一键清理」一次性删除全部本机数据，或卸载应用删除应用目录内的本机数据。</li>
+    <li>在应用商店管理、取消订阅或申请退款。</li>
+    <li>就本政策或数据处理提出询问、异议与删除请求。</li>
+</ul>
+
+<h2>九、未成年人</h2>
+<p>本应用不面向未满 14 周岁的儿童独立使用。「安全」页的沟通节律分析面向监护人，用于了解被监护人的沟通频率与时段；关联他人账号前，你应确保已取得该账号使用者的同意，或依法享有监护权。若你认为未成年人的信息在未经同意的情况下被处理，请通过下方联系方式与我们联系，我们会及时核实并删除。</p>
+
+<h2>十、安全措施</h2>
+<p>我们采取传输层加密、系统应用沙箱、最小权限与日志脱敏等措施保护数据：日志不记录消息正文、会话凭证与推送令牌原文。但任何技术手段都无法保证绝对安全，若发生安全事件，我们会依法告知受影响的范围与处置方式。</p>
+
+<h2>十一、政策更新</h2>
+<p>我们可能更新本政策。更新后的文本随应用版本内置发布，并在本页展示最近更新日期；若更新导致你的权利发生实质性变化，我们会通过应用内提示或其他合理方式告知。</p>
+
+<h2>十二、联系我们</h2>
+<p>如对本政策、数据处理或数据删除有疑问，请通过应用商店页面公示的开发者联系方式与我们联系，我们会在合理期限内答复。</p>
+</body>
+</html>

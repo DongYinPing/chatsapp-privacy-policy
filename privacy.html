@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Privacy Policy</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --fg: #1c1c1e;
+            --muted: #6b6b70;
+            --line: rgba(0, 0, 0, 0.12);
+            --surface: #ffffff;
+            --surface-alt: rgba(0, 0, 0, 0.04);
+            --link: #0a5fd0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fg: #f2f2f7;
+                --muted: #a1a1a8;
+                --line: rgba(255, 255, 255, 0.16);
+                --surface: #1c1c1e;
+                --surface-alt: rgba(255, 255, 255, 0.06);
+                --link: #7ab6ff;
+            }
+        }
+        html { background: var(--surface); }
+        body {
+            margin: 0;
+            padding: 20px 18px 40px;
+            background: var(--surface);
+            color: var(--fg);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.75;
+            word-break: break-word;
+        }
+        h1 { font-size: 22px; line-height: 1.35; margin: 0 0 6px; letter-spacing: 0.2px; }
+        .updated { font-size: 13px; color: var(--muted); margin: 0 0 18px; }
+        .lead { margin: 0 0 22px; }
+        h2 {
+            font-size: 16px;
+            margin: 28px 0 10px;
+            padding-top: 18px;
+            border-top: 1px solid var(--line);
+        }
+        h2:first-of-type { border-top: 0; padding-top: 0; }
+        p { margin: 0 0 12px; }
+        ul { margin: 0 0 12px; padding-left: 20px; }
+        li { margin: 0 0 8px; }
+        strong { font-weight: 600; }
+        .muted { color: var(--muted); font-size: 13px; }
+        .table-wrap { margin: 0 0 14px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+        th { font-weight: 600; background: var(--surface-alt); white-space: nowrap; }
+        .note {
+            background: var(--surface-alt);
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin: 0 0 14px;
+            font-size: 14px;
+        }
+        .note p:last-child { margin-bottom: 0; }
+        a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+        a:visited { color: var(--link); }
+    </style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="updated">Effective date: October 28, 2026 · Last updated: October 28, 2026</p>
+<p class="lead">This app is a companion utility for a third-party messaging client that <strong>runs on your device</strong> and offers two account tabs, Incognito and Safety, to review linked accounts' status updates and online presence and to organise conversations and communication rhythm locally. We do not operate servers that receive your chat content: messages, statuses, and media are processed and stored on your device. This policy explains what data is involved, when it leaves your device, and how you can control and delete it.</p>
+<div class="note"><p class="muted" style="margin:0">This app is not affiliated with, endorsed by, authorised by, or partnered with the third-party messaging service it connects to or that service's operator. Service names and marks belong to their respective owners.</p></div>
+
+<h2>1. Core principles</h2>
+<ul>
+    <li><strong>On-device first</strong>: conversations, statuses, presence, and media are processed and stored on your device by default.</li>
+    <li><strong>No account required</strong>: we do not ask you to create an account with us or to provide a phone number, email, or legal name. The phone number you enter is used only to start a device link with the connected messaging service.</li>
+    <li><strong>Data minimization</strong>: data is processed only for features you enable. We do not build advertising profiles.</li>
+    <li><strong>No sale</strong>: we do not sell your personal information or provide chat content to third parties for marketing.</li>
+</ul>
+
+<h2>2. Data stored on your device</h2>
+<div class="table-wrap">
+    <table>
+        <thead>
+        <tr><th>Category</th><th>Contents</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Preferences</td>
+            <td>Onboarding and tip dismissal flags, the list of linked accounts (including the country code and phone number you entered, account label, and avatar path), the active account, and the anonymous device ID used for push</td>
+            <td>Remember your settings and linked state</td>
+        </tr>
+        <tr>
+            <td>Session credentials</td>
+            <td>Per-account multi-device login credentials issued by the connected messaging service, plus a cache of conversation names</td>
+            <td>Keep the device link alive without re-pairing</td>
+        </tr>
+        <tr>
+            <td>Messages and insights</td>
+            <td>Conversation text and timestamps, direction, message type, local media paths, view-once flags, status thumbnails, online and last-seen times, read position, and unread counts for the tabs you enable</td>
+            <td>Show conversations, statuses, and local insights</td>
+        </tr>
+        <tr>
+            <td>Media cache</td>
+            <td>Images, videos, and voice notes you view or the app downloads automatically, plus their index</td>
+            <td>Local playback and re-viewing</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<p>This data lives in the app's private sandbox directory. We do not upload it, and we do not provide cloud backup or cross-device sync. The Android build disables system backup (Auto Backup and device-to-device transfer), and the iOS build marks the app data directory as excluded from iCloud backup, so on either platform the system does not copy or migrate the data on its own (on iOS any earlier iCloud backup rotates out on the next backup). If you create a full device backup yourself, any copy in it follows your and the platform's backup policy. Unlinking an account deletes that account's credentials, records, and media files; uninstalling the app removes data in the app directory. You can also erase all of this at once with <strong>Settings → Data → Clear local data</strong> (see section 7).</p>
+
+<h2>3. Online features and data flows</h2>
+<ul>
+    <li><strong>Device linking and message sync</strong>: the app shows a QR code or requests an 8-digit pairing code on your device, and you finish linking in the messaging client on your phone. Afterwards the app connects directly to that service's servers from your device; the phone number and protocol credentials are used only to complete the link. Message content is end-to-end encrypted in transit by that service. Because the app has to render conversations and insights, decrypted content is processed and stored only on your device (see section 2); we hold no keys and no plaintext on our servers.</li>
+    <li><strong>Push notifications (if enabled)</strong>: on app start, FCM or APNs issues a push token, which is reported to our backend together with an anonymous device ID generated on your device, <strong>solely to deliver notifications</strong>. It contains no chat content. Whether notifications are shown is up to you in system settings; after you turn them off we stop sending alerts, and the token already reported is kept until you request deletion.</li>
+    <li><strong>Subscriptions and one-time purchases</strong>: payments are completed by Apple App Store or Google Play. We only read product details and entitlement status, never card or billing data.</li>
+    <li><strong>App updates</strong>: handled by Google Play in-app updates on Android and by the App Store on iOS; no extra device data is uploaded by us.</li>
+    <li><strong>Analytics and crash diagnostics</strong>: the app uses Firebase Analytics and Firebase Crashlytics to record feature-usage events, device model, OS version, app version, app instance identifiers and the system advertising identifier, crash stack traces, and runtime state. These records <strong>exclude chat content, phone numbers, and media files</strong>, and are processed by Google under its privacy policy; you can reset or limit the advertising identifier in system settings.</li>
+    <li><strong>Opening the messaging client</strong>: launching the connected messaging client from the app is a local system hand-off that passes no conversation data.</li>
+</ul>
+
+<h2>4. Data we do not collect or upload</h2>
+<ul>
+    <li>No phone number, email, or legal name for registration; we run no user account system.</li>
+    <li>No card numbers, passwords, or full billing addresses.</li>
+    <li>No message bodies, statuses, media, contacts, or presence uploaded to our servers.</li>
+    <li>No access to your full address book, precise location, call logs, or SMS.</li>
+</ul>
+
+<h2>5. System permissions</h2>
+<ul>
+    <li><strong>Notifications</strong>: the permission the app requests directly, used for alerts. You can turn it off in system settings at any time; saved content stays viewable.</li>
+    <li><strong>Camera, microphone, photo library</strong>: the current version does not use these permissions. It does not take photos, record audio, or read from or write to your photo library; these options only exist as reserved platform capability. If a future version adds capture or picker features, we will request the permission at that time and update this policy accordingly.</li>
+    <li><strong>Contacts</strong>: a single number you explicitly pick in the system contact picker is read for linking. We do not read your address book in bulk and never upload it.</li>
+    <li><strong>Clipboard</strong>: written only when you copy a pairing code; other clipboard content is not read.</li>
+</ul>
+
+<h2>6. Third-party services</h2>
+<div class="table-wrap">
+    <table>
+        <thead>
+        <tr><th>Service</th><th>Provider</th><th>Data involved</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Firebase Analytics, Crashlytics</td><td>Google</td><td>Anonymous usage events, device and OS info, advertising identifier, crash logs</td></tr>
+        <tr><td>FCM / APNs</td><td>Google / Apple</td><td>Push token, anonymous device ID</td></tr>
+        <tr><td>App Store / Google Play billing</td><td>Apple / Google</td><td>Purchase and subscription status</td></tr>
+        <tr><td>Third-party messaging service</td><td>That service's operator</td><td>Link credentials and protocol traffic (end-to-end encrypted)</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="note">
+    <p><strong>Third-party privacy policies</strong></p>
+    <ul>
+        <li>Google (Firebase Analytics, Crashlytics, FCM, Google Play): <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+        <li>Apple (App Store, APNs): <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+        <li>Third-party messaging service: refer to the privacy policy published on that service's official site or inside its client</li>
+    </ul>
+    <p class="muted">These links open in your system browser. Third-party policies may change; the version published by each provider prevails.</p>
+</div>
+<p>Other than the providers above, legal requirements, protection of users' or others' rights, and cases where you give separate consent, we do not disclose your information. If a merger, acquisition, or asset transfer occurs, the relevant data transfers with it and we will notify you in advance.</p>
+
+<h2>7. Retention and deletion</h2>
+<ul>
+    <li>On-device data is kept until you delete it by unlinking an account, clearing everything with <strong>Settings → Data → Clear local data</strong>, or uninstalling the app.</li>
+    <li><strong>Clear local data</strong>: running it under Settings → Data stops background sync immediately and deletes the chat records, statuses, downloaded media and avatars, presence and read state, and the linked accounts and session credentials stored on this device. It takes effect at once, cannot be undone, and you must pair again afterwards.</li>
+    <li>Our backend keeps only the push token and anonymous device ID used to deliver notifications; you may request deletion via the contact below.</li>
+    <li>Store purchase records are retained by Apple or Google under their policies; deleting the app does not affect your subscription.</li>
+</ul>
+
+<h2>8. Your rights</h2>
+<ul>
+    <li>Review your membership status, notification permission state, and version information in Settings, and open this policy there.</li>
+    <li>Withdraw notification and other permissions in system settings.</li>
+    <li>Unlink an account in the app to erase that account's data, clear all local data at once with <strong>Settings → Data → Clear local data</strong>, or uninstall the app to remove data in the app directory.</li>
+    <li>Manage, cancel, or request refunds for subscriptions through the app store.</li>
+    <li>Ask questions, raise objections, or request deletion regarding this policy or our data processing.</li>
+</ul>
+
+<h2>9. Children</h2>
+<p>This app is not intended for independent use by children under 14. The communication-rhythm insights on the Safety tab are designed for guardians to understand a dependant's activity frequency and time windows. Before linking another person's account, you must have that user's consent or lawful guardianship. If you believe a child's information has been processed without consent, contact us and we will verify and delete it promptly.</p>
+
+<h2>10. Security</h2>
+<p>We rely on transport encryption, the system app sandbox, least-privilege permissions, and log redaction: logs never contain message bodies, session credentials, or raw push tokens. No technology can guarantee absolute security; if a security incident occurs, we will notify affected users as required by law.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>We may update this policy. The latest text ships inside the app and this page shows the last updated date. If a change materially affects your rights, we will notify you in the app or by another reasonable method.</p>
+
+<h2>12. Contact</h2>
+<p>For questions about this policy, our data processing, or data deletion, contact us through the developer details published on the app store listing. We will respond within a reasonable period.</p>
+</body>
+</html>
